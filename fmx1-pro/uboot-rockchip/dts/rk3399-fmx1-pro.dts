@@ -204,9 +204,9 @@
 	phy-mode = "rgmii";
 	pinctrl-names = "default";
 	pinctrl-0 = <&rgmii_pins &rgmii_phy_reset>;
-	snps,reset-gpio = <&gpio3 RK_PB7 GPIO_ACTIVE_LOW>;
+	snps,reset-gpio = <0x1e 0xf 0x1>;
 	snps,reset-active-low;
-	snps,reset-delays-us = <0 10000 50000>;
+	snps,reset-delays-us = <0x0 0x2710 0xc350>;
 	tx_delay = <0x28>;
 	rx_delay = <0x11>;
 	status = "okay";
